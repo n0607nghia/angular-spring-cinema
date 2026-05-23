@@ -1,8 +1,15 @@
-.idea
-*/out/
-*/target/
+# IDE
+.idea/
+**/.idea/
 *.iml
+.vs/
+.vscode/
 
+# Java build output
+out/
+**/out/
+target/
+**/target/
 # dependencies
 */node_modules
 
@@ -25,6 +32,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-/target/
+
 /cinema/debug.log
 /cinema-frontend/node_modules/
