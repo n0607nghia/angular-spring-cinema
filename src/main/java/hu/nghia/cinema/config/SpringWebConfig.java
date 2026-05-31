@@ -1,5 +1,5 @@
 /*
- * Copyright © Progmasters (QTC Kft.), 2016-2019.
+ * Copyright © Nghia (QTC Kft.), 2016-2019.
  * All rights reserved. No part or the whole of this Teaching Material (TM) may be reproduced, copied, distributed,
  * publicly performed, disseminated to the public, adapted or transmitted in any form or by any means, including
  * photocopying, recording, or other electronic or mechanical methods, without the prior written permission of QTC Kft.
@@ -9,7 +9,7 @@
  * Any dispute or claim arising out of the breach of these provisions shall be governed by and construed in accordance with the laws of Hungary.
  */
 
-package hu.progmasters.cinema.config;
+package hu.nghia.cinema.config;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;

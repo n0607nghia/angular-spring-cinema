@@ -35,3 +35,6 @@ yarn-error.log*
 
 /cinema/debug.log
 /cinema-frontend/node_modules/
+
+# Claude local config
+claude/
