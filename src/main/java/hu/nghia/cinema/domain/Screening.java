@@ -6,7 +6,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -20,7 +19,7 @@ public class Screening {
     private Integer id;
     @Column(name = "movie_title")
     private String movieTitle;
-    @Column(name = "despription")
+    @Column(name = "description")
     private String description;
     private LocalDateTime screenTime;
     @Column(name = "seats")
