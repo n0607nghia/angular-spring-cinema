@@ -1,4 +1,4 @@
-package hu.nghia.cinema.controller.user;
+package hu.nghia.cinema.controller;
 
 import hu.nghia.cinema.dto.UserDto;
 import hu.nghia.cinema.service.UserService;
