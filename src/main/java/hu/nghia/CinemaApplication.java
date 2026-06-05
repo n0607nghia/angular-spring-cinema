@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AngularSpringExamPreparationCinemaSolutionApplication {
+public class CinemaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AngularSpringExamPreparationCinemaSolutionApplication.class, args);
+        SpringApplication.run(CinemaApplication.class, args);
     }
 
 }

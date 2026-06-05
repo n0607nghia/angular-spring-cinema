@@ -1,5 +1,6 @@
 package hu.nghia.cinema.domain;
 
+import hu.nghia.cinema.dto.BookingDto;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -19,4 +20,14 @@ public class Booking {
     @ManyToOne
     @JoinColumn(name = "screening_id")
     private Screening screening;
+
+    public Booking() {
+    }
+
+    public Booking(BookingDto bookingDto) {
+        this.seats = bookingDto.getSeats();
+        this.date = bookingDto.getDate();
+        this.user = bookingDto.getUser();
+        this.screening = bookingDto.getScreening();
+    }
 }

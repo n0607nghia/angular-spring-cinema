@@ -1,5 +1,6 @@
 package hu.nghia.cinema.domain;
 
+import hu.nghia.cinema.dto.ScreeningDto;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -27,4 +28,15 @@ public class Screening {
     @OneToMany(mappedBy = "screening")
     private List<Booking> booking;
     private String pictureUrl;
+
+    public Screening() {
+    }
+
+    public Screening(ScreeningDto screeningDto) {
+        this.movieTitle = screeningDto.getMovieTitle();
+        this.description = screeningDto.getDescription();
+        this.screenTime = screeningDto.getScreenTime();
+        this.seats = screeningDto.getSeats();
+        this.pictureUrl = screeningDto.getPictureUrl();
+    }
 }
