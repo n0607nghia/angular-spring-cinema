@@ -36,7 +36,7 @@
                 "input": "public"
               },
               {
-                "glob": "link_logo.png",
+                "glob": "**/*",
                 "input": "src/app/sources",
                 "output": "/"
               }
@@ -102,7 +102,7 @@
                 "input": "public"
               },
               {
-                "glob": "link_logo.png",
+                "glob": "**/*",
                 "input": "src/app/sources",
                 "output": "/"
               }

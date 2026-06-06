@@ -1,4 +1,4 @@
-<section class="hero rounded-5 p-4 p-md-5 mb-4">
+<section id="home" class="hero rounded-5 p-4 p-md-5 mb-4">
   <div class="row align-items-center g-4">
     <div class="col-lg-7">
       <span class="badge rounded-pill text-bg-light text-dark fw-semibold mb-3">Now Booking</span>
@@ -6,10 +6,10 @@
       <p class="lead text-white-50 mb-4">
         You want to watch the newest movie? Then you came to the right place. Gia Cinema is the one that you are looking for.
       </p>
-      <button class="btn btn-light btn-lg rounded-pill px-4 fw-semibold">Find a movie</button>
+      <a class="btn btn-light btn-lg rounded-pill px-4 fw-semibold" href="#movies">Find a movie</a>
     </div>
     <div class="col-lg-5">
-      <div class="booking-panel rounded-5 p-4">
+      <div id="booking" class="booking-panel rounded-5 p-4">
         <h2 class="h5 text-white mb-3">Quick Booking</h2>
         <div class="mb-3">
           <label class="form-label text-white-50">Movie</label>
@@ -27,7 +27,7 @@
   </div>
 </section>
 
-<section class="row g-4">
+<section id="movies" class="row g-4">
   <article class="col-md-6 col-xl-4" *ngFor="let movie of movies">
     <div class="movie-card rounded-5 p-4 h-100">
       <p class="text-uppercase small text-white-50 mb-2">{{ movie.hall }}</p>
@@ -39,4 +39,9 @@
       </div>
     </div>
   </article>
+</section>
+
+<section id="contact" class="contact-panel rounded-5 p-4 p-md-5 mt-4">
+  <h2 class="h4 text-white mb-2">Contact</h2>
+  <p class="text-white-50 mb-0">Need help with your booking? Reach us at <a class="link-light" href="mailto:help@giacinema.com">help&#64;giacinema.com</a>.</p>
 </section>

@@ -4,12 +4,12 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
-.brand-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #ff8a00;
-  box-shadow: 0 0 12px rgba(255, 138, 0, 0.8);
+.brand-logo {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav-link {
@@ -24,3 +24,5 @@
 .navbar-toggler-icon {
   filter: invert(1);
 }
+
+
