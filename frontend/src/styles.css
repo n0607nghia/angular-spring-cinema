@@ -17,10 +17,6 @@ body {
     linear-gradient(180deg, #ff8a00 0%, #ef6c00 45%, #cc5500 100%);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .form-select,
 .form-control {
   color: #fff;

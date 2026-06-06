@@ -26,7 +26,8 @@ public class Screening {
     private Integer seats;
     @OneToMany(mappedBy = "screening")
     private List<Booking> booking;
-    private String pictureUrl;
+    @Column(name = "img_url")
+    private String image;
 
     public Screening() {
     }
@@ -36,6 +37,6 @@ public class Screening {
         this.description = screeningDto.getDescription();
         this.screenTime = screeningDto.getScreenTime();
         this.seats = screeningDto.getSeats();
-        this.pictureUrl = screeningDto.getPictureUrl();
+        this.image = screeningDto.getImage();
     }
 }

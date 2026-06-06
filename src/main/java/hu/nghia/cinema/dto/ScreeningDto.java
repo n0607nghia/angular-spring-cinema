@@ -16,5 +16,5 @@ public class ScreeningDto {
     private LocalDateTime screenTime;
     private Integer seats;
     private List<Booking> booking;
-    private String pictureUrl;
+    private String image;
 }

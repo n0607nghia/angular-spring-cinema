@@ -52,7 +52,7 @@ public class ScreeningService {
         dto.setScreenTime(screening.getScreenTime());
         dto.setSeats(screening.getSeats());
         dto.setBooking(screening.getBooking());
-        dto.setPictureUrl(screening.getPictureUrl());
+        dto.setImage(screening.getImage());
         return dto;
     }
 }
