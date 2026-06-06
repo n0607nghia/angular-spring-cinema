@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>hu.nghia</groupId>
-    <artifactId>angular-spring_exam-preparation_cinema-solution</artifactId>
+    <artifactId>Cinema</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>angular-spring_exam-preparation_cinema-solution</name>
     <description>Demo project for Spring Boot</description>

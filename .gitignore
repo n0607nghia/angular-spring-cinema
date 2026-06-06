@@ -39,3 +39,6 @@ yarn-error.log*
 
 # Claude local config
 claude/
+
+# Copilot local config
+copilot/
