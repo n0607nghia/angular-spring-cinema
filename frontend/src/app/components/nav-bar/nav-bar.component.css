@@ -1,0 +1,26 @@
+.glass-nav {
+  background: linear-gradient(110deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.75));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff8a00;
+  box-shadow: 0 0 12px rgba(255, 138, 0, 0.8);
+}
+
+.nav-link {
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffffff !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}

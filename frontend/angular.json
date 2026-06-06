@@ -34,14 +34,19 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "link_logo.png",
+                "input": "src/app/sources",
+                "output": "/"
               }
             ],
             "styles": [
               "src/styles.css",
-              "frontend/node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "frontend/node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
             ]
           },
           "configurations": {
@@ -95,6 +100,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "link_logo.png",
+                "input": "src/app/sources",
+                "output": "/"
               }
             ],
             "styles": [
