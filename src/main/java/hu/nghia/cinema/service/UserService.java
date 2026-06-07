@@ -50,7 +50,7 @@ public class UserService {
     private UserDto convertToDto(User user) {
         UserDto dto = new UserDto();
         dto.setId(user.getId());
-        dto.setUsername(user.getUsername());
+        dto.setUsername(user.getDisplayName());
         dto.setEmail(user.getEmail());
         dto.setPhone(user.getPhone());
         dto.setAddress(convertToDto(user.getAddress()));
