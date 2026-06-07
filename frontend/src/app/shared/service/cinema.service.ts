@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {routesConfig} from '../core/config/routes.config';
+import {routesConfig} from '../../core/config/routes.config';
 import { ScreeningModel } from '../models/screening-model';
 
 @Injectable({

@@ -4,13 +4,13 @@
 </section>
 
 <section class="row g-4">
-  <article class="col-md-6 col-xl-4" *ngFor="let movie of movies">
+  <article class="col-md-6 col-xl-4" *ngFor="let screen of screening">
     <div class="movie-card rounded-5 p-4 h-100">
-      <p class="text-uppercase small text-white-50 mb-2">{{ movie.hall }}</p>
-      <h2 class="h5 text-white mb-2">{{ movie.title }}</h2>
-      <p class="text-white-50 mb-3">Start: {{ movie.time }}</p>
+      <p class="text-uppercase small text-white-50 mb-2">{{ screen.image}}</p>
+      <h2 class="h5 text-white mb-2">{{ screen.movieTitle }}</h2>
+      <p class="text-white-50 mb-3">Start: {{ screen.screenTime }}</p>
       <div class="d-flex justify-content-between align-items-center">
-        <span class="badge rounded-pill text-bg-light text-dark">{{ movie.seats }} seats left</span>
+        <span class="badge rounded-pill text-bg-light text-dark">{{ screen.seats }} seats left</span>
         <button class="btn btn-outline-light btn-sm rounded-pill px-3">Details</button>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {CinemaService} from '../../../services/cinema.service';
+import {CinemaService} from '../../shared/service/cinema.service';
 import {Router} from '@angular/router';
-import { ScreeningModel } from '../../../models/screening-model';
+import { ScreeningModel } from '../../shared/models/screening-model';
 
 @Component({
   selector: 'app-movies',

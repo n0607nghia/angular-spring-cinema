@@ -59,7 +59,6 @@ public class ScreeningService {
         dto.setDescription(screening.getDescription());
         dto.setScreenTime(screening.getScreenTime());
         dto.setSeats(screening.getSeats());
-        dto.setBooking(screening.getBooking());
         dto.setImage(screening.getImage());
         return dto;
     }
