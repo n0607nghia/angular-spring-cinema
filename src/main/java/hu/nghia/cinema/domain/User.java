@@ -18,20 +18,20 @@ public class User implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer Id;
+    private Integer id;
     @Column(name = "name")
-    private String Username;
+    private String username;
     @Column(name = "password")
-    private String Password;
+    private String password;
     @Column(name = "email", unique = true)
-    private String Email;
+    private String email;
     @Column(name = "phone")
-    private String Phone;
+    private String phone;
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id")
-    private Address Address;
+    private Address address;
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<Booking> Bookings;
+    private List<Booking> bookings;
     @Enumerated(EnumType.STRING)
     @Column(name = "role", nullable = false)
     private Role role = Role.USER;
@@ -40,12 +40,12 @@ public class User implements UserDetails {
     }
 
     public User(UserDto userDto) {
-        this.Bookings = userDto.getBookings().stream().map(Booking::new).toList();
-        this.Bookings.forEach(booking -> booking.setUser(this));
-        this.Address = new Address(userDto.getAddress());
-        this.Email = userDto.getEmail();
-        this.Phone = userDto.getPhone();
-        this.Username = userDto.getUsername();
+        this.bookings = userDto.getBookings().stream().map(Booking::new).toList();
+        this.bookings.forEach(booking -> booking.setUser(this));
+        this.address = new Address(userDto.getAddress());
+        this.email = userDto.getEmail();
+        this.phone = userDto.getPhone();
+        this.username = userDto.getUsername();
         if (userDto.getRole() != null) this.role = userDto.getRole();
     }
 
@@ -54,8 +54,8 @@ public class User implements UserDetails {
         return Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + role.name()));
     }
 
-    @Override public String getPassword() { return Password; }
-    @Override public String getUsername() { return Email; }
+    @Override public String getPassword() { return password; }
+    @Override public String getUsername() { return email; }
     @Override public boolean isAccountNonExpired() { return true; }
     @Override public boolean isAccountNonLocked() { return true; }
     @Override public boolean isCredentialsNonExpired() { return true; }

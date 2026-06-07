@@ -11,24 +11,24 @@ public class Address {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @Column(name = "street")
-    private String Street;
+    private String street;
     @Column(name = "city")
-    private String City;
+    private String city;
     @Column(name = "state")
-    private String State;
+    private String state;
     @Column(name = "zip")
-    private String Zip;
+    private String zip;
     @Column(name = "country")
-    private String Country;
+    private String country;
 
     public Address() {
     }
 
     public Address(AddressDto addressDto) {
-        this.Street = addressDto.getStreet();
-        this.City = addressDto.getCity();
-        this.State = addressDto.getState();
-        this.Zip = addressDto.getZip();
-        this.Country = addressDto.getCountry();
+        this.street = addressDto.getStreet();
+        this.city = addressDto.getCity();
+        this.state = addressDto.getState();
+        this.zip = addressDto.getZip();
+        this.country = addressDto.getCountry();
     }
 }
